@@ -1,0 +1,53 @@
+.bigcontainer {
+background-color:rgb(25,26,27);
+background-size:100%;
+padding:7%;
+}
+
+.container{
+background-color:white;
+max-width:85%;
+display:block;
+padding:20px;
+box-sizing:border-box;
+}
+#txtname{
+	display:block;
+	height:3em;
+}
+
+#txtemail{
+	display:block;
+	height:3em;
+}
+
+#txtsite{
+	display:block;
+	height:3em;
+}
+
+#txtmessage{
+	display:block;
+	height:6em;
+}
+input{
+	width:100%;
+	margin-left:;
+	border-left:3px solid #18191F;
+	border-top:2px solid #eee;
+}
+button{
+	margin-top:27px;
+	width:13em;
+	height:4em;
+	background-color:rgb(25,26,27);
+	color:white;
+	transition:background-color 0.5s ease;
+
+}
+p{
+	margin:1px;
+}
+span{
+	color:red;
+}
