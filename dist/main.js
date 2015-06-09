@@ -24,6 +24,12 @@ $spnsite.hide();
 $spnmessage.hide();
 
 function submit (){
+	$spnname.hide();
+	$spnemail.hide();
+	$spnsite.hide();
+	$spnmessage.hide();
+
+
 	if($txtname.val()==''){
 		$spnname.show();
 	}
