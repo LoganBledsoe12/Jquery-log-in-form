@@ -12,6 +12,7 @@ var $spnmessage = $('#spnmessage');
 
 
 var $btnsubmit = $('#btnsubmit');
+var $message = $('#message');
 
 
 $btnsubmit.on('click', submit);
@@ -22,6 +23,7 @@ $spnname.hide();
 $spnemail.hide();
 $spnsite.hide();
 $spnmessage.hide();
+$message.hide();
 
 function submit (){
 	$spnname.hide();
@@ -32,19 +34,25 @@ function submit (){
 
 	if($txtname.val()==''){
 		$spnname.show();
+		return
 	}
 	if($txtemail.val().indexOf ('@') === -1){
 		$spnemail.show();
+		return
 	}
 	if ($txtsite.val()==''){
 		$spnsite.show();
+		return
 	}
 	if ($txtsite.val().indexOf ('http://') === -1){
 		$spnsite.show();
+		return
 	}
 	if ($txtmessage.val()==''){
 		$spnmessage.show();
+		return
 	}
+	$message.show();
 }
 function colorChange(){
 	$btnsubmit.css ('background-Color', '#88C470');
